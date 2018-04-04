@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head>      <script type="text/javascript">        function insert(){            var src = document.getElementById("gamediv");            var img = document.createElement("img");            img.src = "imagen.png";			img.id = "ola";            src.appendChild(img);        }		function otra(){		var source = 'fotos.zip';		var a = document.createElement('a');		a.download = true;		a.target = '_blank';		a.href= source;		a.click();		}     </script> </head><style>body, html {    height: 100%;    margin: 0;}
+
+.a{
+margin:auto 4px;
+}
+
+#gamediv{
+width: 100%;
+}
+.bgimg {    background-image: url('forestbridge.jpg');    height: 100%;	width: 100%;    background-position: center;    background-size: cover;    position: relative;    color: white;    font-family: "Courier New", Courier, monospace;    font-size: 25px;}#gamediv{	height: 20%;}.topleft {    position: absolute;    top: 0;    left: 16px;}.bottomleft {    position: absolute;    bottom: 0;    left: 16px;}.middle {    position: absolute;    top: 50%;    left: 50%;    transform: translate(-50%, -50%);    text-align: center;}#ola{	margin: 500px 40px;	height: 110%;	width : 15%;}hr {    margin: auto;    width: 40%;}</style><body><div class="bgimg">  <div class="topleft">    <!--<p>Logo</p>-->  </div>  <div class="middle">    <!--<h1>COMING SOON</h1>    <hr>    <p>35 days left</p>-->  </div>  <div class="bottomleft">    <!--<p>Some text</p>-->  </div>  <div id="gamediv">         <script type="text/javascript">             insert();             otra();         </script>	<img class="a"src="imagen.png"></img>	      </div></div>
+</html>
